@@ -10,7 +10,6 @@ import { MODAL_CLOSE_SEC } from './config';
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import { MODAL_CLOSE_SEC } from './config';
 
 const controlRecipes = async function() {
 
@@ -44,7 +43,7 @@ const controlSearchResults = async function() {
   try {
 
     resultsView.renderSpinner();
-    console.log(resultsView);
+    // console.log(resultsView);
     // 1) get search query
     const query = searchView.getQuery();
     if (!query) return;
