@@ -28,7 +28,7 @@ const controlRecipes = async function() {
     // 2) loading recipe
     await model.loadRecipe(id);
 
-    console.log(model.state.recipe);
+    // console.log(model.state.recipe);
     // 3) rendering recipe
     recipeView.render(model.state.recipe);
     // controlServings();
@@ -110,7 +110,7 @@ const controlAddRecipe = async function(newRecipe) {
     // Upload the new recipe data
 
     await model.uploadRecipe(newRecipe);
-    console.log(model.state.recipe);
+    // console.log(model.state.recipe);
 
     // render recipe
     recipeView.render(model.state.recipe);
